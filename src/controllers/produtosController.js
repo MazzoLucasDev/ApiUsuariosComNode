@@ -7,9 +7,6 @@ export const getProduto = (req,res) => {
 
 export const postProduto = (req, res) => {
     const {nome,preco,categoria} = req.body;
-    if (!nome || preco == null || typeof preco !== "number" || !categoria) {
-        return res.status(400).json({erro: "Preencha todos os campos necessarios!"});
-    }
     const newProduct = {
         id: idAtual++,
         nome,

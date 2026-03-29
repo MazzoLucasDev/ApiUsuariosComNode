@@ -1,4 +1,3 @@
-
 let users = [];
 let idAtual = 0;
 
